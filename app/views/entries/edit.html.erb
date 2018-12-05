@@ -1,2 +1,6 @@
 
-<p>Edit View</p>
+<h1> Editing <%= link_to @entry.word, entry_path(@entry) %></h1>
+
+<%= link_to 'Show all entries', entries_path %>
+
+<%= render 'entry_form', entry: @entry %>
